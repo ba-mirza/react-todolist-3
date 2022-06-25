@@ -1,6 +1,26 @@
+* {
+  list-style: none;
+}
+
 .App {
   display: flex;
 }
 .App > div {
   padding: 1rem
+}
+
+.active-panel {
+  background-color: cadetblue;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.pd {
+  margin-bottom: 15px;
+}
+
+.btnRemove {
+  margin-left: 10px;
 }

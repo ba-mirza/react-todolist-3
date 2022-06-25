@@ -4,6 +4,8 @@ export type PropsType = {
   addTask: (title: string) => void;
   removeTask: (id: string) => void;
   changeFilter: (value: FilterValueType) => void;
+  changeTaskStatus: (id: string, isDone: boolean) => void;
+  activePanel: string;
 };
 
 export type TaskType = {

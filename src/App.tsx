@@ -40,6 +40,11 @@ function App() {
         setTasks(newTask);
     }
 
+    const changeTaskStatus = (id: string, isDone: boolean) => {
+        const newTask = tasks.map((t) => t.id === id ? {...t, isDone} : t);
+        setTasks(newTask);
+    }
+
     return (
         <div className="App">
             <Todolist
@@ -48,6 +53,8 @@ function App() {
                 tasks={tasksForTodolist}
                 removeTask={removeTask}
                 changeFilter={changeFilter}
+                changeTaskStatus={changeTaskStatus}
+                activePanel={filter}
             ></Todolist>
         </div>
     )
