@@ -3,10 +3,30 @@
 }
 
 .App {
+  margin: 20px auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .App > div {
   padding: 1rem
+}
+
+.superInput {
+  width: 550px;
+  height: 70px;
+  color: #202020;
+  background-color: #eaeaea;
+  border: 0.5px solid #202020;
+}
+
+input {
+  padding: 15px 15px;
+  align-items: center;
+  outline: none;
+  border: none;
+  font-size: 32px;
+  background-color: #eaeaea;
 }
 
 .active-panel {
